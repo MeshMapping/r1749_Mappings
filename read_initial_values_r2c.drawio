@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.16">
+  <diagram name="Page-1" id="Q2I8Qz81ClW2uElqfRHp">
+    <mxGraphModel dx="1666" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-64" value="read_initial_values_r2c.f90" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="373" y="30" width="157" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-65" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: open_ensim_input&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: parse_header_ensim&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: validate_header_spatial&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: parse_header_attribute_ensim&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: advance_past_header&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: load_data_r2c&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: r2c_to_rank&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-67" target="EYCW6if2Ayh1CbDBakOP-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-67" value="read_initial_values_r2c(shd, iun, fname, ierr)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="321.49" y="110" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-69" target="EYCW6if2Ayh1CbDBakOP-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-69" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Variables declaration and initialization&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="357.24" y="160" width="188.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-71" target="EYCW6if2Ayh1CbDBakOP-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-71" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;gt;!&amp;nbsp; Reads fname&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;call open_ensim_input&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;call parse_header_ensim&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="369.83" y="220" width="162.37" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-73" target="EYCW6if2Ayh1CbDBakOP-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-73" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call validate_header_spatial&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="367.23" y="320" width="167.76" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-75" target="EYCW6if2Ayh1CbDBakOP-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-75" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call parse_header_attribute_ensim&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="347.25" y="390" width="208.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-77" target="EYCW6if2Ayh1CbDBakOP-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-77" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call advance_past_header&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="372.24" y="460" width="157.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-79" target="EYCW6if2Ayh1CbDBakOP-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-79" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call load_data_r2c&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="377.06" y="530" width="148.88" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-81" target="EYCW6if2Ayh1CbDBakOP-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-81" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Print number of active variables&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="373.87" y="890" width="153.32" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-89" target="EYCW6if2Ayh1CbDBakOP-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="468.69999999999993" y="1050" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-83" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="393.96999999999997" y="950" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EYCW6if2Ayh1CbDBakOP-85" target="EYCW6if2Ayh1CbDBakOP-89">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="454" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-85" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;allocate(ffield(shd%NA))&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="368.86" y="600" width="163.34" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.481;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="EYCW6if2Ayh1CbDBakOP-89">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450.2159220000001" y="683.8070874406191" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-89" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280.53" y="669.9959482779111" width="340" height="188.65" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-90" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Reads&amp;nbsp;tfield = lowercase(vattr(l)%attr)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="339.582" y="698.6486014586483" width="218.34476999999998" height="17.819823103272515" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-91" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;call r2c_to_rank&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="379.82593799999995" y="727.2979123769151" width="117.228062" height="23.08267241356544" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-92" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="293.28523199999995" y="755.9542816112445" width="312.030768" height="88.35833333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-93" value="Determine the variable" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="394.638148" y="765.4182636214431" width="127.03069399999997" height="14.327175980833719" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-95" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;if tfield == qi1 or&amp;nbsp;qo1 or&amp;nbsp;stor or&amp;nbsp;lzs&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Assign appropriate grid based variables with&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ffield values&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340.044574" y="791.3867080862483" width="236.208" height="42.98152794250116" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-96" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;lt;conditional block&amp;gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280.53" y="755.953628831533" width="118.104" height="16.886623632838372" as="geometry" />
+        </mxCell>
+        <mxCell id="EYCW6if2Ayh1CbDBakOP-97" value="do l = 1, nattr (# of header attributes)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="289.27953799999995" y="676.39" width="207.77312787916344" height="11.324393796880786" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
